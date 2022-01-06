@@ -1,5 +1,6 @@
 .wbs__header {
     display: flex;
+    flex-direction: row;
 }
 
 .wbs__header-content {
@@ -8,6 +9,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+
     margin-right: 5rem;
 }
 
@@ -21,16 +23,20 @@
 
 .wbs__header-content p {
     font-family: var(--font-family);
+    font-weight: 400;
     font-size: 20px;
-    line-height: 27px;
+    line-height: 28px;
     color: var(--color-text);
+
     margin-top: 1.5rem;
 }
 
 .wbs__header-content__input {
     width: 100%;
     margin: 2rem 0 1rem;
+
     display: flex;
+    flex-direction: row;
 }
 
 .wbs__header-content__input input {
@@ -38,15 +44,17 @@
     width: 100%;
     min-height: 50px;
     font-family: var(--font-family);
+    font-weight: 400;
     font-size: 20px;
-    line-height: 27px;
+    line-height: 28px;
     background: var(--color-footer);
     border: 2px solid var(--color-footer);
     padding: 0 1rem;
     outline: none;
     color: #fff;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .wbs__header-content__input button {
@@ -54,15 +62,16 @@
     width: 100%;
     min-height: 50px;
     font-family: var(--font-family);
-    font-weight: bold;
+    font-weight: 400;
     font-size: 20px;
-    line-height: 27px;
+    line-height: 28px;
     background: #FF4820;
+    border: 2px solid #FF4820;
+    padding: 0 1rem;
     color: #fff;
     cursor: pointer;
     outline: none;
-    padding: 0 1rem;
-    border: none;
+
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -72,6 +81,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-direction: row;
+
     margin-top: 2rem;
 }
 
@@ -106,23 +117,23 @@
     .wbs__header {
         flex-direction: column;
     }
-    
+
     .wbs__header-content {
         margin: 0 0 3rem;
     }
 }
 
 @media screen and (max-width: 650px) {
-    .wbs__header h1 {
+    .wbs__header-content h1 {
         font-size: 48px;
         line-height: 60px;
     }
-    
-    .wbs__header p {
+
+    .wbs__header-content p {
         font-size: 16px;
         line-height: 24px;
     }
-
+    
     .wbs__header-content__people {
         flex-direction: column;
     }
@@ -139,12 +150,12 @@
 }
 
 @media screen and (max-width: 490px) {
-    .wbs__header h1 {
+    .wbs__header-content h1 {
         font-size: 36px;
         line-height: 48px;
     }
-    
-    .wbs__header p {
+
+    .wbs__header-content p {
         font-size: 14px;
         line-height: 24px;
     }
@@ -154,6 +165,4 @@
         font-size: 12px;
         line-height: 16px;
     }
-
-
 }
