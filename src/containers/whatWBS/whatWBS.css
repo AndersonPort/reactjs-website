@@ -52,5 +52,67 @@
 }
 
 .wbs__whatwbs-heading p {
-    
+    font-family: var(--font--family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--color-subtext);
+    cursor: pointer;
+}
+
+.wbs__whatwbs-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.wbs__whatwbs-container .wbs__features-container__feature {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+/* Customizing feature component as per needs */
+.wbs__whatwbs-container .wbs__features-container_feature-text {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .wbs__whatwbs-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .wbs__whatwbs-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .wbs__whatwbs-feature .wbs__features-container__feature {
+        flex-direction: column;
+    }
+
+    /* Customizing feature component as per needs */
+    .wbs__whatwbs-feature .wbs__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .wbs__whatwbs-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .wbs__whatwbs-container .wbs__features-container__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
 }
